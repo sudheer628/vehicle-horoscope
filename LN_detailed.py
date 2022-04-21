@@ -14,8 +14,8 @@ ob = Solution()
 
 import os, json, re
 total = 0
-confile = "pythagoras.json"
-chalfile = "chaldean.json"
+confile = "lib/pythagoras.json"
+chalfile = "lib/chaldean.json"
 
 with open('{}'.format(confile)) as f:
     FromConfig = json.load(f)

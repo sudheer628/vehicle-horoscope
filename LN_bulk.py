@@ -14,8 +14,8 @@ ob = Solution()
 
 import os, json, re
 print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
-confile = "pythagoras.json"
-chalfile = "chaldean.json"
+confile = "lib/pythagoras.json"
+chalfile = "lib/chaldean.json"
 
 with open('{}'.format(confile)) as f:
     FromConfig = json.load(f)
@@ -259,17 +259,17 @@ def logic(input_string, input_string2, horonum, threshold):
 
 input_string2 = input("Enter the DOB in DDMMYYYY format: ")
 horonum = input("Enter your lucky number by your horoscope: ")
-threshold = input("Score limit [exp: 3 - only numbers greater 3 are displayed]: ")
+threshold = input("Score limit out of total 11 [exp: 5 - only numbers greater 5 are printed]: ")
 print("")
 
-inputfile = open('sample.csv', 'r')
+inputfile = open('bulk-num-list.csv', 'r')
 NumberLines = inputfile.readlines()
 converted_list = []
 
 for element in NumberLines:
     converted_list.append(element.strip())
 
-print("generated scores for total of 11:")
+print("Final scores for total of 11:")
 for x in converted_list:
     y = logic(x, input_string2, horonum, threshold)
     if y != "low_score" and y is not None:
