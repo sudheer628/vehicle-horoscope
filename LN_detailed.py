@@ -146,7 +146,7 @@ if len(input_string2) != 0:
         print("Horoscope lucky number was not given!")
 
     print("")
-    print("Prediction based on 4 Digit registration number", vehnumber3)
+    print("@@Prediction based on last four digits", vehnumber3, "@@")
     fourdig  = split(vehnumber3)
 
 ############## Total points - 3

@@ -269,7 +269,7 @@ converted_list = []
 for element in NumberLines:
     converted_list.append(element.strip())
 
-print("Final scores for total of 11:")
+print("@@ Final scores out of 11 points @@")
 for x in converted_list:
     y = logic(x, input_string2, horonum, threshold)
     if y != "low_score" and y is not None:
