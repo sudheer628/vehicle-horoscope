@@ -11,7 +11,7 @@ To install please follow the next steps
 4. Install all dependencies (applies if the requirements.txt file exists)
    1. `python3 -m pip install -d requirements.txt`
 
-**Total points - 11 (accumuated by sum of registration number, matching with zodiac lucky number, DoB lucky number, number quality..etc)**
+**Total points - 11 (which is based on sum of registration number, matching with zodiac lucky number, DoB lucky number, number quality..etc)**
 
 **If the output gives 7 and above, that means the registration number is suitable according to your details given.**
 
