@@ -62,29 +62,29 @@ print("")
 print("@@Nature of this vehicle@@")
 ############## Total points - 2
 if int(finalsum) == 1:
-    print("A vehicle with 01 as a number is the leader on the road. It accelerates quickly, is reliable and attracts attention. It is very favourable for business people. 11- Doubles the value of one")
+    print(input_string, "reduces to 1: A vehicle with 01 as a number is the leader on the road. It accelerates quickly, is reliable and attracts attention. It is very favourable for business people. 11- Doubles the value of one")
     total = total + 2
 elif int(finalsum) == 2:
-    print("Such a vehicle is reliable and rarely breaks down and is a very promising number. Such vehicles rarely get stolen or stopped by traffic cops. A vehicle with the energy of two is a real fortress on wheels. 22 – Enhances the influence of number 2.")
+    print(input_string, "reduces to 2: Such a vehicle is reliable and rarely breaks down and is a very promising number. Such vehicles rarely get stolen or stopped by traffic cops. A vehicle with the energy of two is a real fortress on wheels. 22 – Enhances the influence of number 2.")
     total = total + 2
 elif int(finalsum) == 3:
-    print("The number 3 is a somewhat inconsistent number on a vehicle. On the upside, though, the number brings good luck for some, especially those whose professions are related to money. It can puncture a tire in the middle of the road and cause minor troubles if you are not attentive to it.")
+    print(input_string, "reduces to 3: The number 3 is a somewhat inconsistent number on a vehicle. On the upside, though, the number brings good luck for some, especially those whose professions are related to money. It can puncture a tire in the middle of the road and cause minor troubles if you are not attentive to it.")
 elif int(finalsum) == 4:
-    print("Well, this vehicle is not designed for fast driving on the road. The vehicle is not for business people, but great for creative people. It rarely has a serious break down. Fortunately, the accidents are not of a serious nature.")
+    print(input_string, "reduces to 4: This vehicle is not designed for fast driving on the road. The vehicle is not for business people, but great for creative people. It rarely has a serious break down. Fortunately, the accidents are not of a serious nature.")
     total = total + 1
 elif int(finalsum) == 5:
-    print("The number five promotes unreasonable rearrangements and resourcefulness on the road, but gets along well with other travellers on the way and rarely has accidents.")
+    print(input_string, "reduces to 5: Five promotes unreasonable rearrangements and resourcefulness on the road, but gets along well with other travellers on the way and rarely has accidents.")
     total = total + 1   
 elif int(finalsum) == 6:
-    print("A combination of 6 with other even numbers is the best option for the most expensive vehicles as it will give service for a long time and will not fail.")
+    print(input_string, "reduces to 6: A combination of 6 with other even numbers is the best option for the most expensive vehicles as it will give service for a long time and will not fail.")
     total = total + 1
 elif int(finalsum) == 7:
-    print("A vehicle with a registration number that translates into the number seven does not attract attention in the stream. It rarely breaks down, but the vehicle body is very susceptible to corrosion.It will not work well as a taxi, since no one will try to get into this car because of its inconspicuousness.")
+    print(input_string, "reduces to 7: A vehicle with a registration number that translates into the number seven does not attract attention in the stream. It rarely breaks down, but the vehicle body is very susceptible to corrosion.It will not work well as a taxi, since no one will try to get into this car because of its inconspicuousness.")
 elif int(finalsum) == 8:
-    print("Eight is a reliable vehicle for quiet riders. It is not able to show character, but rarely breaks down. A vehicle with such a number plate is efficient and a good choice for commuting. ")
+    print(input_string, "reduces to 8: Eight is a reliable vehicle for quiet riders. It is not able to show character, but rarely breaks down. A vehicle with such a number plate is efficient and a good choice for commuting. ")
     total = total + 1
 elif int(finalsum) == 9:
-    print("A vehicle with 9 is an impulsive machine that loves to drive. This number means you take quick decisions, but may also drive too fast. It does not tolerate obstructions and does not let other traffic overtake it on the road.It is a car for influential people.")
+    print(input_string, "reduces to 9: A vehicle with 9 is an impulsive machine that loves to drive. This number means you take quick decisions, but may also drive too fast. It does not tolerate obstructions and does not let other traffic overtake it on the road.It is a car for influential people.")
     total = total + 1
 print("")
 
@@ -103,10 +103,10 @@ def isAscending(xs):
         if xs[n] > xs[n+1]:
             return False
     return True
-############## Total points - 0.5
+############## Total points - 1
 if isAscending(result):
     print("Great, Vehicle number is a raising number.")
-    total = total + 0.5
+    total = total + 1
 else:
     pass
 
@@ -146,7 +146,7 @@ if len(input_string2) != 0:
         print("Horoscope lucky number was not given!")
 
     print("")
-    print("@@Prediction based on last four digits", vehnumber3, "@@")
+    print("@@ Prediction based on last four digits", vehnumber3, "@@")
     fourdig  = split(vehnumber3)
 
 ############## Total points - 3
@@ -209,146 +209,154 @@ if len(input_string2) != 0:
         print("")
         print("A single zero will not affect you in any way. But do avoid multiple zeros.")
 
-############## Total points - 2.5
+############## Total points - 2
     if int(finalluk) == 1:
         if int(finalsum) in (2, 3, 9) and int(finalchaldean) in (2, 3, 9):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (2, 3, 9):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (2, 3, 9):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (6, 8):
+            total = total + 2
+        elif int(finalchaldean) in (6, 8) or int(finalsum) in (6, 8):
             print("your lucky number 1 and not compitable with 6 or 8")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 2:
         if int(finalsum) in (1, 3) and int(finalchaldean) in (1, 3):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (1, 3):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (1, 3):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (8, 9):
+            total = total + 2
+        elif int(finalchaldean) in (8, 9) or int(finalsum) in (8, 9):
             print("your lucky number 2 is not compitable with 8 or 9")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 3:
         if int(finalsum) in (1, 2, 9) and int(finalchaldean) in (1, 2, 9):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (1, 2, 9):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (1, 2, 9):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (5, 6):
+            total = total + 2
+        elif int(finalchaldean) in (5, 6) or int(finalsum) in (5, 6):
             print("your lucky number 3 is not compitable with 5 or 6")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 4:
         if int(finalsum) in (5, 6, 8) and int(finalchaldean) in (5, 6, 8):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (5, 6, 8):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (5, 6, 8):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (1, 2):
+            total = total + 2
+        elif int(finalchaldean) in (1, 2) or int(finalsum) in (1, 2):
             print("your lucky number 4 is not compitable with 1 or 2")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 5:
         if int(finalsum) in (1, 4, 6) and int(finalchaldean) in (1, 4, 6):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (1, 4, 6):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (1, 4, 6):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (2, 9):
+            total = total + 2
+        elif int(finalchaldean) in (2, 9) or int(finalsum) in (2, 9):
             print("your lucky number 5 is not compitable with 2 or 9")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 6:
         if int(finalsum) in (4, 5, 8) and int(finalchaldean) in (4, 5, 8):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (4, 5, 8):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (4, 5, 8):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (1, 9):
+            total = total + 2
+        elif int(finalchaldean) in (1, 9) or int(finalsum) in (1, 9):
             print("your lucky number 6 is not compitable with 1 or 9")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 7:
         if int(finalsum) in (8, 6, 5) and int(finalchaldean) in (8, 6, 5):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (8, 6, 5):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (8, 6, 5):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (6, 8):
+            total = total + 2
+        elif int(finalchaldean) in (6, 8) or int(finalsum) in (6, 8):
             print("your lucky number 7 is not compitable with 6 or 8")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 8:
         if int(finalsum) in (4, 5, 6) and int(finalchaldean) in (4, 5, 6):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (4, 5, 6):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (4, 5, 6):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (1, 2):
+            total = total + 2
+        elif int(finalchaldean) in (1, 2) or int(finalsum) in (1, 2):
             print("your lucky number 8 is not compitable with 1 or 2")
             total = total - 1
         else:
             print("Birth number", finalluk,"neither matched or opposed with chaldean number", finalchaldean)
             total = total + 1
+    
     elif int(finalluk) == 9:
         if int(finalsum) in (1, 2, 3) and int(finalchaldean) in (1, 2, 3):
             print("Awesome.. Birth Number is compatible with pythagoras & chaldean systems")
-            total = total + 2.5
+            total = total + 2
         elif int(finalchaldean) in (1, 2, 3):
             print("Birth Number is compatible with chaldean systems")
-            total = total + 2
+            total = total + 1
         elif int(finalsum) in (1, 2, 3):
             print("Birth Number is compatible with pythagoras systems")
-            total = total + 1
-        elif int(finalchaldean) in (5, 8):
+            total = total + 2
+        elif int(finalchaldean) in (5, 8) or int(finalsum) in (5, 8):
             print("your lucky number 9 is not compitable with 5 or 8")
             total = total - 1
         else:

@@ -82,7 +82,7 @@ def logic(input_string, input_string2, horonum, threshold):
         result.append(int(vehnumber3[i : i + A]))
 
     if isAscending(result):
-        total = total + 0.5
+        total = total + 1
     else:
         pass
 
@@ -152,100 +152,100 @@ def logic(input_string, input_string2, horonum, threshold):
 
         if int(finalluk) == 1:
             if int(finalsum) in (2, 3, 9) and int(finalchaldean) in (2, 3, 9):
-                total = total + 2.5
-            elif int(finalchaldean) in (2, 3, 9):
                 total = total + 2
-            elif int(finalsum) in (2, 3, 9):
+            elif int(finalchaldean) in (2, 3, 9):
                 total = total + 1
-            elif int(finalchaldean) in (6, 8):
+            elif int(finalsum) in (2, 3, 9):
+                total = total + 2
+            elif int(finalchaldean) in (6, 8) or int(finalsum) in (6,8):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 2:
             if int(finalsum) in (1, 3) and int(finalchaldean) in (1, 3):
-                total = total + 2.5
-            elif int(finalchaldean) in (1, 3):
                 total = total + 2
-            elif int(finalsum) in (1, 3):
+            elif int(finalchaldean) in (1, 3):
                 total = total + 1
-            elif int(finalchaldean) in (8, 9):
+            elif int(finalsum) in (1, 3):
+                total = total + 2
+            elif int(finalchaldean) in (8, 9) or int(finalsum) in (8,9):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 3:
             if int(finalsum) in (1, 2, 9) and int(finalchaldean) in (1, 2, 9):
-                total = total + 2.5
-            elif int(finalchaldean) in (1, 2, 9):
                 total = total + 2
-            elif int(finalsum) in (1, 2, 9):
+            elif int(finalchaldean) in (1, 2, 9):
                 total = total + 1
-            elif int(finalchaldean) in (5, 6):
+            elif int(finalsum) in (1, 2, 9):
+                total = total + 2
+            elif int(finalchaldean) in (5, 6) or int(finalsum) in (5,6):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 4:
             if int(finalsum) in (5, 6, 8) and int(finalchaldean) in (5, 6, 8):
-                total = total + 2.5
-            elif int(finalchaldean) in (5, 6, 8):
                 total = total + 2
-            elif int(finalsum) in (5, 6, 8):
+            elif int(finalchaldean) in (5, 6, 8):
                 total = total + 1
-            elif int(finalchaldean) in (1, 2):
+            elif int(finalsum) in (5, 6, 8):
+                total = total + 2
+            elif int(finalchaldean) in (1, 2) or int(finalsum) in (1,2):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 5:
             if int(finalsum) in (1, 4, 6) and int(finalchaldean) in (1, 4, 6):
-                total = total + 2.5
-            elif int(finalchaldean) in (1, 4, 6):
                 total = total + 2
-            elif int(finalsum) in (1, 4, 6):
+            elif int(finalchaldean) in (1, 4, 6):
                 total = total + 1
-            elif int(finalchaldean) in (2, 9):
+            elif int(finalsum) in (1, 4, 6):
+                total = total + 2
+            elif int(finalchaldean) in (2, 9) or int(finalsum) in (2, 9):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 6:
             if int(finalsum) in (4, 5, 8) and int(finalchaldean) in (4, 5, 8):
-                total = total + 2.5
-            elif int(finalchaldean) in (4, 5, 8):
                 total = total + 2
-            elif int(finalsum) in (4, 5, 8):
+            elif int(finalchaldean) in (4, 5, 8):
                 total = total + 1
-            elif int(finalchaldean) in (1, 9):
+            elif int(finalsum) in (4, 5, 8):
+                total = total + 2
+            elif int(finalchaldean) in (1, 9) or int(finalsum) in (1,9):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 7:
             if int(finalsum) in (8, 6, 5) and int(finalchaldean) in (8, 6, 5):
-                total = total + 2.5
-            elif int(finalchaldean) in (8, 6, 5):
                 total = total + 2
-            elif int(finalsum) in (8, 6, 5):
+            elif int(finalchaldean) in (8, 6, 5):
                 total = total + 1
-            elif int(finalchaldean) in (6, 8):
+            elif int(finalsum) in (8, 6, 5):
+                total = total + 2
+            elif int(finalchaldean) in (6, 8) or int(finalsum) in (6,8):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 8:
             if int(finalsum) in (4, 5, 6) and int(finalchaldean) in (4, 5, 6):
-                total = total + 2.5
-            elif int(finalchaldean) in (4, 5, 6):
                 total = total + 2
-            elif int(finalsum) in (4, 5, 6):
+            elif int(finalchaldean) in (4, 5, 6):
                 total = total + 1
-            elif int(finalchaldean) in (1, 2):
+            elif int(finalsum) in (4, 5, 6):
+                total = total + 2
+            elif int(finalchaldean) in (1, 2) or int(finalsum) in (1,2):
                 total = total - 1
             else:
                 total = total + 1
         elif int(finalluk) == 9:
             if int(finalsum) in (1, 2, 3) and int(finalchaldean) in (1, 2, 3):
-                total = total + 2.5
-            elif int(finalchaldean) in (1, 2, 3):
                 total = total + 2
-            elif int(finalsum) in (1, 2, 3):
+            elif int(finalchaldean) in (1, 2, 3):
                 total = total + 1
-            elif int(finalchaldean) in (5, 8):
+            elif int(finalsum) in (1, 2, 3):
+                total = total + 2
+            elif int(finalchaldean) in (5, 8) or int(finalsum) in (5,8):
                 total = total - 1
             else:
                 total = total + 1
